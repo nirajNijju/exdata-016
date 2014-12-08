@@ -12,7 +12,10 @@ d <- data_sebset["Global_active_power"]
 d1<- as.numeric(as.character(d$Global_active_power))
 d1<- d1*2
 
+png("exdata-016/plot1.png", height=480, width=480)  
 hist(d1, col='red', xlab = 'Global Active Power (kilowatts)', main = 'Global Active Power')
+dev.off()
+
 
 
 
