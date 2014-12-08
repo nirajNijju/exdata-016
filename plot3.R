@@ -12,8 +12,8 @@ png("exdata-016/plot3.png", height=480, width=480)
 
 plot(data_subset$Date_Time, data_subset$Sub_metering_1, pch=NA, xlab="", ylab="Global Active Power (kilowatts)")
 lines(data_subset$Date_Time, data_subset$Sub_metering_1)
-lines(data_subset$Date_Time, data_subset$Sub_metering_2)
-lines(data_subset$Date_Time, data_subset$Sub_metering_3)
+lines(data_subset$Date_Time, data_subset$Sub_metering_2,col="red")
+lines(data_subset$Date_Time, data_subset$Sub_metering_3, col="blue")
 
 dev.off()
 
